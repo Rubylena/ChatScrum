@@ -1,0 +1,49 @@
+.tasker{
+    margin: 20px 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box{
+    width: 300px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box h3{
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    background-color: brown;
+}
+
+.task{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.task:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.1s ease-in-out;
+    padding: 10.5px 10px;
+}
+
+.scroll{
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.time{
+    font-size: 12px;
+    font-weight: 600;
+    color: crimson;
+}
+
+.blue{
+    color: darkblue;
+}

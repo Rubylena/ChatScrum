@@ -1,0 +1,64 @@
+.sign_up{
+    background-color: rgb(112, 4, 89);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    color: rgb(173, 241, 241);
+}
+
+.sign_up h3{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+    /* width: 300px; */
+    margin: 15px 0;
+    padding: 10px;
+    outline: none;
+}
+
+button {
+    width: fit-content;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.6s ease;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(16, 16, 90);
+    color: white;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: white;
+    color: rgb(16, 16, 90);
+    border-radius: 1px solid rgb(16, 16, 90);
+}
+
+.message{
+    color: red;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -10px;
+    width: 300px;
+}

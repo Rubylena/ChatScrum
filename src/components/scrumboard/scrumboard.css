@@ -1,0 +1,45 @@
+.scrum{
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: brown;
+    color: white;
+}
+
+nav div > p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.show{
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.hidden{
+    display: none;
+}
+
+#modal{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    border: 1px solid black;
+    z-index: 1;
+    background-color: antiquewhite;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: brown;
+    color: aliceblue;
+}
+
+#modal form {
+    padding: 10px;
+}

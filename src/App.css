@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App > h1{
+  font-family: Cursive;
+  font-size: 40px;
+}
+.forms{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  
+}

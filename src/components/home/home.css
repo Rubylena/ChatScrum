@@ -1,0 +1,17 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign{
+    display: flex;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+}

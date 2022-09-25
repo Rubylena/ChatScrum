@@ -1,0 +1,37 @@
+const handleOnDragEnd = result => {
+        if(!result.destination){
+            return;
+        }
+        if(result.source.droppableId === result.destination.droppableId){
+            if(result.source.droppableId === "weekly"){
+                let tempWeeklyTasks = Array.from(weeklyTasks);
+                const [reorderedItem] = tempWeeklyTasks.splice(result.source.index, 1);
+                tempWeeklyTasks.splice(result.destination.index, 0, reorderedItem);
+        
+                updateWeeklyTasks(tempWeeklyTasks);
+            }
+            else{
+                let tempDailyTasks = Array.from(dailyTasks);
+                const [reorderedItem] = tempDailyTasks.splice(result.source.index, 1);
+                tempDailyTasks.splice(result.destination.index, 0, reorderedItem);
+                setDailyTasks(tempDailyTasks);
+            }
+        }
+        else{
+            let tempWeeklyTasks = weeklyTasks;
+            let tempDailyTasks = dailyTasks;
+
+            if(result.source.droppableId === "weekly"){
+                const [removed] = tempWeeklyTasks.splice(result.source.index, 1);
+                tempDailyTasks.splice(result.destination.index, 0, removed);
+                updateWeeklyTasks(tempWeeklyTasks);
+                setDailyTasks(tempDailyTasks);
+            }
+            else{
+                const [removed] = tempDailyTasks.splice(result.source.index, 1);
+                tempWeeklyTasks.splice(result.destination.index, 0, removed);
+                updateWeeklyTasks(tempWeeklyTasks);
+                setDailyTasks(tempDailyTasks);
+            }
+        }
+    }
